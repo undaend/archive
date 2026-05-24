@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ARCHIVE NETWORK</title>
+<style>
+body{
+background:#020202;
+color:#ff4b4b;
+font-family:monospace;
+padding:40px;
+}
+
+.level{
+margin-bottom:24px;
+padding:20px;
+background:#080808;
+border:1px solid rgba(255,0,0,.25);
+}
+
+.locked{
+opacity:.4;
+}
+
+.entry{
+padding:10px;
+margin-top:10px;
+background:#111;
+}
+</style>
+</head>
+<body>
+
+<h1>CLASSIFIED ARCHIVE</h1>
+
+<div class="level">
+<h2>LEVEL 1</h2>
+<div class="entry">WATCHER REPORTS</div>
+<div class="entry">ENTITY AUDIO</div>
+</div>
+
+<div class="level">
+<h2>LEVEL 2</h2>
+<div class="entry">CONTAINMENT BREACH</div>
+<div class="entry">SIGNAL LOGS</div>
+</div>
+
+<div class="level locked">
+<h2>LEVEL 3</h2>
+<div class="entry">REDACTED EXPERIMENTS</div>
+<div class="entry">VOID CONTACT</div>
+</div>
+
+<div class="level locked">
+<h2>LEVEL 4</h2>
+<div class="entry">FINAL ENTITY</div>
+<div class="entry">BEDROCK OBSERVER</div>
+</div>
+
+<script>
+const morse=[
+'... --- ...',
+'.-- .- - -.-. .... . .-.',
+'.-. . -.. / ... .. --. -. .- .-..'
+];
+
+setInterval(()=>{
+console.log(
+morse[Math.floor(Math.random()*morse.length)]
+);
+},30000);
+
+setTimeout(()=>{
+alert('WARNING: LEVEL 4 ACCESS DETECTED');
+},120000);
+</script>
+
+</body>
+</html>
